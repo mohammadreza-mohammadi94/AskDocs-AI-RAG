@@ -24,7 +24,7 @@ This project is a lightweight, local semantic search engine built with [ChromaDB
 .
 ├── news_articles/           # Folder for .txt documents to index
 ├── chroma_persistent_storage/  # Auto-generated persistent ChromaDB storage
-├── main.py                  # Main script
+├── app.py                   # Main script
 ├── .env                     # Environment file for OpenAI API key
 ```
 
@@ -34,8 +34,8 @@ This project is a lightweight, local semantic search engine built with [ChromaDB
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/mohammadreza-mohammadi94/AskDocs-AI-RAG.git
+   cd AskDocs-AI-RAG
    ```
 
 2. **Install dependencies:**
@@ -59,20 +59,20 @@ This project is a lightweight, local semantic search engine built with [ChromaDB
 5. **Run the project:**
 
    ```bash
-   python main.py
+   python app.py
    ```
 
 
 ## ❓ Example Query
 
 ```python
-question = "How much money OnlyFans is being sold for?"
+question = "How to set number of trees in Random Forest?"
 ```
 
 Output:
 
 ```
-Answer: OnlyFans is being sold for approximately $2 billion.
+Answer: Use the optRF package to find the optimal number of trees. In the example, opt_prediction recommends 19,000 trees for prediction, while ranger uses 500 trees by default.
 ```
 
 (*Depends on document context*)

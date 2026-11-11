@@ -125,8 +125,7 @@ def main():
                 print(f"Error upserting chunk {doc['id']}: {str(e)}")
 
     # Example query
-    #question = "How to set number of trees in Random Forest?"
-    question = "How much money Onlyfans is being sold for?"
+    question = "How to set number of trees in Random Forest?"
     relevant_chunks = query_documents(question)
     if relevant_chunks:
         answer = generate_response(question, relevant_chunks)
